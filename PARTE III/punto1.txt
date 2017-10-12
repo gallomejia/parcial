@@ -1,0 +1,2 @@
+--Create a tablespace called "HACEB" with one datafile of 100Mb, the name of the datafile should be: haceb.dbf (0.1)
+CREATE TABLESPACE HACEB DATAFILE 'C:\APP\CATALINA\VIRTUAL\ORADATA\ORCL\haceb.dbf' SIZE 100M;
