@@ -1,0 +1,6 @@
+--Create an user named "amartinez" with unlimited space on tablespace, the profile should be "ventas" (0.1)
+CREATE USER c##amartinez
+	IDENTIFIED BY admin2017
+	DEFAULT TABLESPACE gofar_travel
+	QUOTA UNLIMITED ON gofar_travel
+    PROFILE c##ventas;
