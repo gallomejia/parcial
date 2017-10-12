@@ -1,0 +1,23 @@
+  CREATE TABLE CATEGORIES(
+  ID     INT NOT NULL,
+  NAME   VARCHAR2 (255),
+  SEASON VARCHAR2 (255),
+  CONSTRAINT pk_categories primary key(id)
+  );
+
+  CREATE TABLE PRODUCTS(
+  id        INT,
+  name      VARCHAR2 (255),
+  reference VARCHAR2 (255),
+  price     DECIMAL(10,3),
+  id_category INT NOT NULL,
+  CONSTRAINT pk_productos primary key(id),
+  CONSTRAINT fk_category FOREIGN KEY (id_category) REFERENCES CATEGORIES (id)
+  );
+
+  CREATE TABLE ANSWERS(
+  ID                 INT NOT NULL,
+  NUMBER_OF_QUESTION VARCHAR2 (255),
+  ANSWER             VARCHAR2 (255),
+  CONSTRAINT pk_ANSWERS primary key(id)
+  );
